@@ -18,8 +18,8 @@ class WaveguidePCell(pya.PCellDeclarationHelper):
     def produce_impl(self):
         tech = get_technology_by_name("EBeam")
         dbu = self.layout.dbu
-        width = self.width / dbu
-        length = self.length / dbu
+        width = self.width 
+        length = self.length
         points = [
             pya.DPoint(0, -width/2),
             pya.DPoint(length, -width/2),
